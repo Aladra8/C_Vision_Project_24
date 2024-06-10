@@ -1,0 +1,1 @@
+set(__QT_DEPLOY_TARGET_C_Vision_Project_FILE /Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build/C_Vision_Project)
