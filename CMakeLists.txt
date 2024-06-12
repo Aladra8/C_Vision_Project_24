@@ -38,10 +38,10 @@ include_directories(${OpenCV_INCLUDE_DIRS} ${Qt6Widgets_INCLUDE_DIRS} include)
 
 add_executable(C_Vision_Project
     src/main.cpp
-    src/ImageProcessor.cpp
     src/BallTracker.cpp
     src/MLModel.cpp
     src/MainWindow.cpp
+    src/VideoProcessor.cpp
 )
 
 target_link_libraries(C_Vision_Project ${OpenCV_LIBS} Qt6::Widgets)
