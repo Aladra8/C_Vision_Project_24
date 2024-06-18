@@ -1,11 +1,11 @@
 CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o: \
-  /Users/babadrammeh/C_Vision_Labs/Final\ Project/C_Vision_Project/src/MainWindow.cpp \
-  /Users/babadrammeh/C_Vision_Labs/Final\ Project/C_Vision_Project/include/MainWindow.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QMainWindow \
-  /usr/local/lib/QtWidgets.framework/Headers/qmainwindow.h \
-  /usr/local/include/QtWidgets/qtwidgetsglobal.h \
-  /usr/local/include/QtGui/qtguiglobal.h \
-  /usr/local/include/QtCore/qglobal.h \
+  /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/MainWindow.cpp \
+  /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/include/MainWindow.h \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QMainWindow \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtwidgetsglobal.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtguiglobal.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qglobal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
@@ -133,26 +133,27 @@ CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mode_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdbool.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdbool.h \
-  /usr/local/include/QtCore/qtversionchecks.h \
-  /usr/local/include/QtCore/qtconfiginclude.h \
-  /usr/local/include/QtCore/qconfig.h \
-  /usr/local/include/QtCore/qtcore-config.h \
-  /usr/local/include/QtCore/qtconfigmacros.h \
-  /usr/local/include/QtCore/qtcoreexports.h \
-  /usr/local/include/QtCore/qcompilerdetection.h \
-  /usr/local/include/QtCore/qsystemdetection.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtversionchecks.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtconfiginclude.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qconfig.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtcore-config.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtconfigmacros.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtcoreexports.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcompilerdetection.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsystemdetection.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/TargetConditionals.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityMacros.h \
-  /usr/local/include/QtCore/qprocessordetection.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qprocessordetection.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/atomic \
-  /usr/local/include/QtCore/qtdeprecationmarkers.h \
-  /usr/local/include/QtCore/qtpreprocessorsupport.h \
-  /usr/local/include/QtCore/qassert.h /usr/local/include/QtCore/qtnoop.h \
-  /usr/local/include/QtCore/qtypes.h \
-  /usr/local/include/QtCore/qtversion.h \
-  /usr/local/include/QtCore/qtclasshelpermacros.h \
-  /usr/local/include/QtCore/qtypeinfo.h \
-  /usr/local/include/QtCore/qcontainerfwd.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtdeprecationmarkers.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtpreprocessorsupport.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qassert.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtnoop.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtypes.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtversion.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtclasshelpermacros.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtypeinfo.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontainerfwd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/variant \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__availability \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/hash.h \
@@ -281,56 +282,57 @@ CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/ranges_operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /usr/local/include/QtCore/qsysinfo.h \
-  /usr/local/include/QtCore/qlogging.h \
-  /usr/local/include/QtCore/qflags.h \
-  /usr/local/include/QtCore/qcompare_impl.h \
-  /usr/local/include/QtCore/qatomic.h \
-  /usr/local/include/QtCore/qbasicatomic.h \
-  /usr/local/include/QtCore/qatomic_cxx11.h \
-  /usr/local/include/QtCore/qgenericatomic.h \
-  /usr/local/include/QtCore/qyieldcpu.h \
-  /usr/local/include/QtCore/qconstructormacros.h \
-  /usr/local/include/QtCore/qdarwinhelpers.h \
-  /usr/local/include/QtCore/qexceptionhandling.h \
-  /usr/local/include/QtCore/qforeach.h \
-  /usr/local/include/QtCore/qttypetraits.h \
-  /usr/local/include/QtCore/qfunctionpointer.h \
-  /usr/local/include/QtCore/qglobalstatic.h \
-  /usr/local/include/QtCore/qmalloc.h \
-  /usr/local/include/QtCore/qminmax.h \
-  /usr/local/include/QtCore/qnumeric.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsysinfo.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qlogging.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qflags.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcompare_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qatomic.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbasicatomic.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qatomic_cxx11.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qgenericatomic.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qyieldcpu.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qconstructormacros.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdarwinhelpers.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qexceptionhandling.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qforeach.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qttypetraits.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfunctionpointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qglobalstatic.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmalloc.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qminmax.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qnumeric.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/math.h \
-  /usr/local/include/QtCore/qoverload.h \
-  /usr/local/include/QtCore/qswap.h \
-  /usr/local/include/QtCore/qtenvironmentvariables.h \
-  /usr/local/include/QtCore/qtresource.h \
-  /usr/local/include/QtCore/qttranslation.h \
-  /usr/local/include/QtCore/qversiontagging.h \
-  /usr/local/include/QtGui/qtgui-config.h \
-  /usr/local/include/QtGui/qtguiexports.h \
-  /usr/local/include/QtWidgets/qtwidgets-config.h \
-  /usr/local/include/QtWidgets/qtwidgetsexports.h \
-  /usr/local/include/QtWidgets/qwidget.h \
-  /usr/local/include/QtGui/qwindowdefs.h \
-  /usr/local/include/QtCore/qobjectdefs.h \
-  /usr/local/include/QtCore/qnamespace.h \
-  /usr/local/include/QtCore/qtmetamacros.h \
-  /usr/local/include/QtCore/qobjectdefs_impl.h \
-  /usr/local/include/QtCore/qfunctionaltools_impl.h \
-  /usr/local/include/QtCore/qobject.h \
-  /usr/local/include/QtCore/qstring.h /usr/local/include/QtCore/qchar.h \
-  /usr/local/include/QtCore/qstringview.h \
-  /usr/local/include/QtCore/qbytearray.h \
-  /usr/local/include/QtCore/qrefcount.h \
-  /usr/local/include/QtCore/qarraydata.h \
-  /usr/local/include/QtCore/qpair.h \
-  /usr/local/include/QtCore/qarraydatapointer.h \
-  /usr/local/include/QtCore/qarraydataops.h \
-  /usr/local/include/QtCore/qcontainertools_impl.h \
-  /usr/local/include/QtCore/qxptype_traits.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qoverload.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qswap.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtenvironmentvariables.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtresource.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qttranslation.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qversiontagging.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtgui-config.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtguiexports.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtwidgets-config.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtwidgetsexports.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qwidget.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qwindowdefs.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobjectdefs.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qnamespace.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtmetamacros.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobjectdefs_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfunctionaltools_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobject.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstring.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qchar.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringview.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbytearray.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qrefcount.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qarraydata.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qpair.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qarraydatapointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qarraydataops.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontainertools_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qxptype_traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
@@ -425,11 +427,11 @@ CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
-  /usr/local/include/QtCore/q20functional.h \
-  /usr/local/include/QtCore/q20memory.h \
-  /usr/local/include/QtCore/qbytearrayalgorithms.h \
-  /usr/local/include/QtCore/qbytearrayview.h \
-  /usr/local/include/QtCore/qstringfwd.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/q20functional.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/q20memory.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbytearrayalgorithms.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbytearrayview.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringfwd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdio \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string_view \
@@ -441,37 +443,38 @@ CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctrans_t.h \
-  /usr/local/include/QtCore/q20type_traits.h \
-  /usr/local/include/QtCore/qstringliteral.h \
-  /usr/local/include/QtCore/qstringalgorithms.h \
-  /usr/local/include/QtCore/qlatin1stringview.h \
-  /usr/local/include/QtCore/qanystringview.h \
-  /usr/local/include/QtCore/qutf8stringview.h \
-  /usr/local/include/QtCore/qstringtokenizer.h \
-  /usr/local/include/QtCore/qstringbuilder.h \
-  /usr/local/include/QtCore/qstringconverter.h \
-  /usr/local/include/QtCore/qstringconverter_base.h \
-  /usr/local/include/QtCore/qlist.h \
-  /usr/local/include/QtCore/qhashfunctions.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/q20type_traits.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringliteral.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringalgorithms.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qlatin1stringview.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qanystringview.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qutf8stringview.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringtokenizer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringbuilder.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringconverter.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringconverter_base.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qlist.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qhashfunctions.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
-  /usr/local/include/QtCore/qiterator.h \
-  /usr/local/include/QtCore/qbytearraylist.h \
-  /usr/local/include/QtCore/qstringlist.h \
-  /usr/local/include/QtCore/qalgorithms.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiterator.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbytearraylist.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringlist.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qalgorithms.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
-  /usr/local/include/QtCore/qstringmatcher.h \
-  /usr/local/include/QtCore/qscopedpointer.h \
-  /usr/local/include/QtCore/qmetatype.h \
-  /usr/local/include/QtCore/qcompare.h \
-  /usr/local/include/QtCore/qcomparehelpers.h \
-  /usr/local/include/QtCore/qdatastream.h \
-  /usr/local/include/QtCore/qiodevicebase.h \
-  /usr/local/include/QtCore/qfloat16.h /usr/local/include/QtCore/qmath.h \
-  /usr/local/include/QtCore/qiterable.h \
-  /usr/local/include/QtCore/qmetacontainer.h \
-  /usr/local/include/QtCore/qcontainerinfo.h \
-  /usr/local/include/QtCore/qtaggedpointer.h \
-  /usr/local/include/QtCore/qscopeguard.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringmatcher.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qscopedpointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmetatype.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcompare.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcomparehelpers.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdatastream.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevicebase.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfloat16.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmath.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiterable.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmetacontainer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontainerinfo.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtaggedpointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qscopeguard.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
@@ -481,69 +484,56 @@ CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
-  /usr/local/include/QtCore/qobject_impl.h \
-  /usr/local/include/QtCore/qbindingstorage.h \
-  /usr/local/include/QtCore/qmargins.h \
-  /usr/local/include/QtCore/q23utility.h \
-  /usr/local/include/QtGui/qaction.h \
-  /usr/local/include/QtGui/qkeysequence.h \
-  /usr/local/include/QtGui/qicon.h /usr/local/include/QtCore/qsize.h \
-  /usr/local/include/QtGui/qpixmap.h \
-  /usr/local/include/QtGui/qpaintdevice.h \
-  /usr/local/include/QtCore/qrect.h /usr/local/include/QtCore/qpoint.h \
-  /usr/local/include/QtGui/qcolor.h /usr/local/include/QtGui/qrgb.h \
-  /usr/local/include/QtGui/qrgba64.h \
-  /usr/local/include/QtCore/qshareddata.h \
-  /usr/local/include/QtGui/qimage.h \
-  /usr/local/include/QtGui/qpixelformat.h \
-  /usr/local/include/QtGui/qtransform.h \
-  /usr/local/include/QtGui/qpolygon.h /usr/local/include/QtGui/qregion.h \
-  /usr/local/include/QtCore/qline.h /usr/local/include/QtCore/qvariant.h \
-  /usr/local/include/QtCore/qdebug.h \
-  /usr/local/include/QtCore/qtextstream.h \
-  /usr/local/include/QtCore/qcontiguouscache.h \
-  /usr/local/include/QtCore/qsharedpointer.h \
-  /usr/local/include/QtCore/qsharedpointer_impl.h \
-  /usr/local/include/QtCore/qmap.h \
-  /usr/local/include/QtCore/qshareddata_impl.h \
-  /usr/local/include/QtCore/qset.h /usr/local/include/QtCore/qhash.h \
-  /usr/local/include/QtCore/qvarlengtharray.h \
-  /usr/local/include/QtGui/qpalette.h /usr/local/include/QtGui/qbrush.h \
-  /usr/local/include/QtGui/qfont.h /usr/local/include/QtCore/qendian.h \
-  /usr/local/include/QtGui/qfontmetrics.h \
-  /usr/local/include/QtGui/qfontinfo.h \
-  /usr/local/include/QtWidgets/qsizepolicy.h \
-  /usr/local/include/QtGui/qcursor.h /usr/local/include/QtGui/qbitmap.h \
-  /usr/local/include/QtWidgets/qtabwidget.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QApplication \
-  /usr/local/lib/QtWidgets.framework/Headers/qapplication.h \
-  /usr/local/include/QtCore/qcoreapplication.h \
-  /usr/local/include/QtCore/qcoreevent.h \
-  /usr/local/include/QtCore/qdeadlinetimer.h \
-  /usr/local/include/QtCore/qelapsedtimer.h \
-  /usr/local/include/QtCore/qeventloop.h \
-  /usr/local/include/QtCore/qnativeinterface.h \
-  /usr/local/include/QtCore/qcoreapplication_platform.h \
-  /usr/local/include/QtGui/qguiapplication.h \
-  /usr/local/include/QtGui/qinputmethod.h \
-  /usr/local/include/QtCore/qlocale.h \
-  /usr/local/include/QtGui/qguiapplication_platform.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QPushButton \
-  /usr/local/lib/QtWidgets.framework/Headers/qpushbutton.h \
-  /usr/local/include/QtWidgets/qabstractbutton.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QLabel \
-  /usr/local/lib/QtWidgets.framework/Headers/qlabel.h \
-  /usr/local/include/QtWidgets/qframe.h \
-  /usr/local/include/QtGui/qpicture.h \
-  /usr/local/include/QtCore/qiodevice.h \
-  /usr/local/include/QtGui/qtextdocument.h \
-  /usr/local/include/QtCore/qurl.h \
-  /usr/local/lib/QtWidgets.framework/Headers/QVBoxLayout \
-  /usr/local/lib/QtWidgets.framework/Headers/qboxlayout.h \
-  /usr/local/include/QtWidgets/qlayout.h \
-  /usr/local/include/QtWidgets/qlayoutitem.h \
-  /usr/local/include/QtWidgets/qboxlayout.h \
-  /usr/local/include/QtWidgets/qgridlayout.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobject_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbindingstorage.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmargins.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/q23utility.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qaction.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qkeysequence.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qicon.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsize.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpixmap.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpaintdevice.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qrect.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qpoint.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qcolor.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qrgb.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qrgba64.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qshareddata.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qimage.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpixelformat.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtransform.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpolygon.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qregion.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qline.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qvariant.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdebug.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtextstream.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontiguouscache.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsharedpointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsharedpointer_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmap.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qshareddata_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qset.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qhash.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qvarlengtharray.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpalette.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qbrush.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qfont.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qendian.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qfontmetrics.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qfontinfo.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qsizepolicy.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qcursor.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qbitmap.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtabwidget.h \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QLabel \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qlabel.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qframe.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpicture.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevice.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtextdocument.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qurl.h \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/opencv.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/opencv_modules.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core.hpp \

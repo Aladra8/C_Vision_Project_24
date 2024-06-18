@@ -1,0 +1,6 @@
+-I/usr/local/Cellar/opencv/4.9.0_9/include/opencv4
+-I/usr/local/Cellar/libtensorflow/2.16.1/include
+-I/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/include
+-o
+/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/include/moc_MainWindow.cpp
+/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/include/MainWindow.h

@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o"
+  "CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o.d"
   "CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o"
   "CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o.d"
   "CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o"
@@ -11,6 +13,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/C_Vision_Project.dir/src/main.cpp.o.d"
   "C_Vision_Project"
   "C_Vision_Project.pdb"
+  "include/moc_MainWindow.cpp"
 )
 
 # Per-language clean rules from dependency scanning.

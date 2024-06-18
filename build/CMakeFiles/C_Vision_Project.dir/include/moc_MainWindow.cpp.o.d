@@ -1,16 +1,15 @@
-CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
-  /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/ImageProcessor.cpp \
-  /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/include/ImageProcessor.h \
-  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/opencv.hpp \
-  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/opencv_modules.hpp \
-  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core.hpp \
-  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/cvdef.h \
-  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/version.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/limits \
+CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o: \
+  /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/include/moc_MainWindow.cpp \
+  /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/include/../../include/MainWindow.h \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QMainWindow \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qmainwindow.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtwidgetsglobal.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtguiglobal.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qglobal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__config_site \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/pthread.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/type_traits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstddef \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/version \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stddef.h \
@@ -19,18 +18,14 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/forward.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/move.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__undef_macros \
-  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/hal/interface.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdint.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdint.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int16_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int32_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int64_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint8_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint16_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint32_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/utility \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__debug \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iosfwd \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__mbstate_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wchar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stddef.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/wchar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/cdefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_symbol_aliasing.h \
@@ -38,67 +33,27 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_intptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/Availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityInternal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_null.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_size_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mbstate_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/types.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_int64_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int8_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int16_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int32_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_u_int64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_intptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uintptr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_intmax_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_uintmax_t.h \
-  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/emmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/xmmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mm_malloc.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdlib.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdlib.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/Availability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityVersions.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityInternal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/wait.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_pid_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_id_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/appleapiopts.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_mcontext.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_mcontext.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/_structs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/_structs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_sigaltstack.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ucontext.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_sigset_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_size_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uid_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/resource.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_timeval.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/endian.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/endian.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_endian.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/_OSByteOrder.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/i386/_OSByteOrder.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/alloca.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ct_rune_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rune_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_wchar_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_null.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/malloc/_malloc.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_dev_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mode_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__debug \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/iosfwd \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__mbstate_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wchar.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stddef.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/wchar.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mbstate_t.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdarg.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdio.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdio.h \
@@ -121,39 +76,9 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_ctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/runetype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tuple \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bits \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstring \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/string.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rsize_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_errno_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/strings.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/functional \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/search.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/comp.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iterator_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/concepts \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/invoke.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/weak_result_type.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_function.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/unary_function.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional_base \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/operations.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/reference_wrapper.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/addressof.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/uses_allocator.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/exception \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__availability \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdlib \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/new \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/typeinfo \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdint \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/utility \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/as_const.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/cmp.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/limits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/declval.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/exchange.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/in_place.h \
@@ -166,11 +91,105 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/to_underlying.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/compare \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/initializer_list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdint \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdint.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdint.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint8_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint16_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint32_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_uint64_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_intmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_uintmax_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/assert.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/wait.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_id_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/appleapiopts.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/machine/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/mach/i386/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_sigaltstack.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_ucontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_sigset_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_uid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/resource.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_timeval.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/machine/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/i386/endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_endian.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/_OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/libkern/i386/_OSByteOrder.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/alloca.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/malloc/_malloc.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_dev_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_mode_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdbool.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdbool.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtversionchecks.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtconfiginclude.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qconfig.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtcore-config.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtconfigmacros.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtcoreexports.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcompilerdetection.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsystemdetection.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/TargetConditionals.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/AvailabilityMacros.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qprocessordetection.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/atomic \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtdeprecationmarkers.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtpreprocessorsupport.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qassert.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtnoop.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtypes.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtversion.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtclasshelpermacros.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtypeinfo.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontainerfwd.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/variant \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__availability \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/hash.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/unary_function.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstring \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_rsize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/sys/_types/_errno_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/strings.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__variant/monostate.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/exception \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/addressof.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdlib \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/new \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/tuple \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional_base \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_function.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/invoke.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/weak_result_type.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/operations.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/reference_wrapper.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator_arg_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/uses_allocator.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/typeinfo \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/functional \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/search.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/comp.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/iterator_traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/incrementable_traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/concepts \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/readable_traits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binary_negate.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/bind_front.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/perfect_forward.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/tuple \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/bind.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binder1st.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/binder2nd.h \
@@ -185,8 +204,6 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/allocator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdexcept \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/unique_ptr.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/hash.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/atomic \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__thread/poll_with_backoff.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/chrono \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/ctime \
@@ -234,8 +251,6 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__ranges/access.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__ranges/enable_borrowed_range.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__utility/__decay_copy.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/variant \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__variant/monostate.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/counted_iterator.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/default_sentinel.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__iterator/data.h \
@@ -259,7 +274,6 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/temporary_buffer.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__memory/uninitialized_algorithms.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cassert \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/assert.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/identity.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/mem_fn.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/mem_fun_ref.h \
@@ -268,6 +282,59 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/ranges_operations.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/unary_negate.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsysinfo.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qlogging.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qflags.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcompare_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qatomic.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbasicatomic.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qatomic_cxx11.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qgenericatomic.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qyieldcpu.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qconstructormacros.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdarwinhelpers.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qexceptionhandling.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qforeach.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qttypetraits.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfunctionpointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qglobalstatic.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmalloc.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qminmax.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qnumeric.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/math.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qoverload.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qswap.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtenvironmentvariables.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtresource.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qttranslation.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qversiontagging.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtgui-config.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtguiexports.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtwidgets-config.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtwidgetsexports.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qwidget.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qwindowdefs.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobjectdefs.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qnamespace.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtmetamacros.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobjectdefs_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfunctionaltools_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobject.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstring.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qchar.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringview.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbytearray.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qrefcount.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qarraydata.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qpair.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qarraydatapointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qarraydataops.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontainertools_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qxptype_traits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/algorithm \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/adjacent_find.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/all_of.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/any_of.h \
@@ -360,9 +427,11 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/transform.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique_copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__algorithm/unique.h \
-  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/base.hpp \
-  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/cvstd.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cctype \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/q20functional.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/q20memory.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbytearrayalgorithms.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbytearrayview.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringfwd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cstdio \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/string_view \
@@ -370,12 +439,114 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cwchar \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cwctype \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cctype \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/wctype.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/_types/_wctrans_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/cmath \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/math.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/math.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/q20type_traits.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringliteral.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringalgorithms.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qlatin1stringview.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qanystringview.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qutf8stringview.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringtokenizer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringbuilder.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringconverter.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringconverter_base.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qlist.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qhashfunctions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/numeric \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiterator.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbytearraylist.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringlist.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qalgorithms.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/bit \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringmatcher.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qscopedpointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmetatype.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcompare.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcomparehelpers.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdatastream.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevicebase.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfloat16.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmath.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiterable.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmetacontainer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontainerinfo.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtaggedpointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qscopeguard.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/array \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/list \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobject_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbindingstorage.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmargins.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/q23utility.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qaction.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qkeysequence.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qicon.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsize.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpixmap.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpaintdevice.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qrect.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qpoint.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qcolor.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qrgb.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qrgba64.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qshareddata.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qimage.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpixelformat.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtransform.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpolygon.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qregion.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qline.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qvariant.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdebug.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtextstream.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontiguouscache.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsharedpointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsharedpointer_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmap.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qshareddata_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qset.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qhash.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qvarlengtharray.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpalette.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qbrush.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qfont.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qendian.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qfontmetrics.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qfontinfo.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qsizepolicy.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qcursor.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qbitmap.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtabwidget.h \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QLabel \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qlabel.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qframe.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpicture.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevice.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtextdocument.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qurl.h \
+  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/opencv.hpp \
+  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/opencv_modules.hpp \
+  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core.hpp \
+  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/cvdef.h \
+  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/version.hpp \
+  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/hal/interface.h \
+  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/cv_cpu_dispatch.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/emmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/xmmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mmintrin.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/mm_malloc.h \
+  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/base.hpp \
+  /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/cvstd.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/cvstd_wrapper.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/neon_utils.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/vsx_utils.hpp \
@@ -389,9 +560,6 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/float.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/float.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/float.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/vector \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__bit_reference \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__split_buffer \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/mat.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/bufferpool.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/mat.inl.hpp \
@@ -467,11 +635,6 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core/async.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/dnn/../dnn/version.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/dnn/dict.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/map \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__functional/is_transparent.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__node_handle \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/optional \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/__tree \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/dnn/layer.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/dnn/dnn.inl.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/dnn/utils/inference_engine.hpp \
@@ -537,7 +700,6 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/stitching/detail/matchers.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/stitching/detail/motion_estimators.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/stitching/detail/util.hpp \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/list \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/stitching/detail/util_inl.hpp \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/queue \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/deque \
@@ -548,18 +710,4 @@ CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/video.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/video/background_segm.hpp \
-  /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/include/MLModel.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tensorflow/c/c_api.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tensorflow/c/c_api_macros.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tensorflow/c/tf_attrtype.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tensorflow/c/tf_buffer.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tensorflow/c/tf_datatype.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tensorflow/c/tf_status.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tsl/c/tsl_status.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tensorflow/c/tf_tensor.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk/usr/include/c++/v1/stdbool.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.0/include/stdbool.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tensorflow/c/tf_tstring.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tensorflow/core/platform/ctstring.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tsl/platform/ctstring.h \
-  /usr/local/Cellar/libtensorflow/2.16.1/include/tsl/platform/ctstring_internal.h
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtmochelpers.h

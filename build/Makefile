@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.28.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project"
+CMAKE_SOURCE_DIR = /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build"
+CMAKE_BINARY_DIR = /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build/CMakeFiles" "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/CMakeFiles /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -128,6 +128,30 @@ C_Vision_Project: cmake_check_build_system
 C_Vision_Project/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_Vision_Project.dir/build.make CMakeFiles/C_Vision_Project.dir/build
 .PHONY : C_Vision_Project/fast
+
+include/moc_MainWindow.o: include/moc_MainWindow.cpp.o
+.PHONY : include/moc_MainWindow.o
+
+# target to build an object file
+include/moc_MainWindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_Vision_Project.dir/build.make CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o
+.PHONY : include/moc_MainWindow.cpp.o
+
+include/moc_MainWindow.i: include/moc_MainWindow.cpp.i
+.PHONY : include/moc_MainWindow.i
+
+# target to preprocess a source file
+include/moc_MainWindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_Vision_Project.dir/build.make CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.i
+.PHONY : include/moc_MainWindow.cpp.i
+
+include/moc_MainWindow.s: include/moc_MainWindow.cpp.s
+.PHONY : include/moc_MainWindow.s
+
+# target to generate assembly for a file
+include/moc_MainWindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/C_Vision_Project.dir/build.make CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.s
+.PHONY : include/moc_MainWindow.cpp.s
 
 src/BallTracker.o: src/BallTracker.cpp.o
 .PHONY : src/BallTracker.o
@@ -258,6 +282,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... C_Vision_Project"
+	@echo "... include/moc_MainWindow.o"
+	@echo "... include/moc_MainWindow.i"
+	@echo "... include/moc_MainWindow.s"
 	@echo "... src/BallTracker.o"
 	@echo "... src/BallTracker.i"
 	@echo "... src/BallTracker.s"

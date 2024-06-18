@@ -53,10 +53,10 @@ RM = /usr/local/Cellar/cmake/3.28.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project"
+CMAKE_SOURCE_DIR = /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build"
+CMAKE_BINARY_DIR = /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/C_Vision_Project.dir/depend.make
@@ -69,75 +69,93 @@ include CMakeFiles/C_Vision_Project.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/C_Vision_Project.dir/flags.make
 
+include/moc_MainWindow.cpp: /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/include/MainWindow.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/moc_MainWindow.cpp"
+	cd /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/include && /usr/local/share/qt/libexec/moc @/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/include/moc_MainWindow.cpp_parameters
+
 CMakeFiles/C_Vision_Project.dir/src/main.cpp.o: CMakeFiles/C_Vision_Project.dir/flags.make
-CMakeFiles/C_Vision_Project.dir/src/main.cpp.o: /Users/babadrammeh/C_Vision_Labs/Final\ Project/C_Vision_Project/src/main.cpp
+CMakeFiles/C_Vision_Project.dir/src/main.cpp.o: /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/main.cpp
 CMakeFiles/C_Vision_Project.dir/src/main.cpp.o: CMakeFiles/C_Vision_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/C_Vision_Project.dir/src/main.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C_Vision_Project.dir/src/main.cpp.o -MF CMakeFiles/C_Vision_Project.dir/src/main.cpp.o.d -o CMakeFiles/C_Vision_Project.dir/src/main.cpp.o -c "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/main.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/C_Vision_Project.dir/src/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C_Vision_Project.dir/src/main.cpp.o -MF CMakeFiles/C_Vision_Project.dir/src/main.cpp.o.d -o CMakeFiles/C_Vision_Project.dir/src/main.cpp.o -c /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/main.cpp
 
 CMakeFiles/C_Vision_Project.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C_Vision_Project.dir/src/main.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/main.cpp" > CMakeFiles/C_Vision_Project.dir/src/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/main.cpp > CMakeFiles/C_Vision_Project.dir/src/main.cpp.i
 
 CMakeFiles/C_Vision_Project.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C_Vision_Project.dir/src/main.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/main.cpp" -o CMakeFiles/C_Vision_Project.dir/src/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/main.cpp -o CMakeFiles/C_Vision_Project.dir/src/main.cpp.s
 
 CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: CMakeFiles/C_Vision_Project.dir/flags.make
-CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: /Users/babadrammeh/C_Vision_Labs/Final\ Project/C_Vision_Project/src/ImageProcessor.cpp
+CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/ImageProcessor.cpp
 CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o: CMakeFiles/C_Vision_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o -MF CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o.d -o CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o -c "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/ImageProcessor.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o -MF CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o.d -o CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o -c /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/ImageProcessor.cpp
 
 CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/ImageProcessor.cpp" > CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/ImageProcessor.cpp > CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.i
 
 CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/ImageProcessor.cpp" -o CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/ImageProcessor.cpp -o CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.s
 
 CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o: CMakeFiles/C_Vision_Project.dir/flags.make
-CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o: /Users/babadrammeh/C_Vision_Labs/Final\ Project/C_Vision_Project/src/BallTracker.cpp
+CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o: /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/BallTracker.cpp
 CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o: CMakeFiles/C_Vision_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o -MF CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o.d -o CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o -c "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/BallTracker.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o -MF CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o.d -o CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o -c /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/BallTracker.cpp
 
 CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/BallTracker.cpp" > CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/BallTracker.cpp > CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.i
 
 CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/BallTracker.cpp" -o CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/BallTracker.cpp -o CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.s
 
 CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o: CMakeFiles/C_Vision_Project.dir/flags.make
-CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o: /Users/babadrammeh/C_Vision_Labs/Final\ Project/C_Vision_Project/src/MLModel.cpp
+CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o: /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/MLModel.cpp
 CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o: CMakeFiles/C_Vision_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o -MF CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o.d -o CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o -c "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/MLModel.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o -MF CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o.d -o CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o -c /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/MLModel.cpp
 
 CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/MLModel.cpp" > CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/MLModel.cpp > CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.i
 
 CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/MLModel.cpp" -o CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/MLModel.cpp -o CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.s
 
 CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o: CMakeFiles/C_Vision_Project.dir/flags.make
-CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o: /Users/babadrammeh/C_Vision_Labs/Final\ Project/C_Vision_Project/src/MainWindow.cpp
+CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o: /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/MainWindow.cpp
 CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o: CMakeFiles/C_Vision_Project.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o -MF CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o.d -o CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o -c "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/MainWindow.cpp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o -MF CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o.d -o CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o -c /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/MainWindow.cpp
 
 CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/MainWindow.cpp" > CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/MainWindow.cpp > CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.i
 
 CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/src/MainWindow.cpp" -o CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/src/MainWindow.cpp -o CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.s
+
+CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o: CMakeFiles/C_Vision_Project.dir/flags.make
+CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o: include/moc_MainWindow.cpp
+CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o: CMakeFiles/C_Vision_Project.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o -MF CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o.d -o CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o -c /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/include/moc_MainWindow.cpp
+
+CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/include/moc_MainWindow.cpp > CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.i
+
+CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/include/moc_MainWindow.cpp -o CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.s
 
 # Object files for target C_Vision_Project
 C_Vision_Project_OBJECTS = \
@@ -145,7 +163,8 @@ C_Vision_Project_OBJECTS = \
 "CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o" \
 "CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o" \
 "CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o" \
-"CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o"
+"CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o" \
+"CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o"
 
 # External object files for target C_Vision_Project
 C_Vision_Project_EXTERNAL_OBJECTS =
@@ -155,6 +174,7 @@ C_Vision_Project: CMakeFiles/C_Vision_Project.dir/src/ImageProcessor.cpp.o
 C_Vision_Project: CMakeFiles/C_Vision_Project.dir/src/BallTracker.cpp.o
 C_Vision_Project: CMakeFiles/C_Vision_Project.dir/src/MLModel.cpp.o
 C_Vision_Project: CMakeFiles/C_Vision_Project.dir/src/MainWindow.cpp.o
+C_Vision_Project: CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o
 C_Vision_Project: CMakeFiles/C_Vision_Project.dir/build.make
 C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_gapi.4.9.0.dylib
 C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_stitching.4.9.0.dylib
@@ -191,7 +211,9 @@ C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_wechat_qrcode.4
 C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_xfeatures2d.4.9.0.dylib
 C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_xobjdetect.4.9.0.dylib
 C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_xphoto.4.9.0.dylib
-C_Vision_Project: /usr/local/lib/QtWidgets.framework/Versions/A/QtWidgets
+C_Vision_Project: /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/QtWidgets
+C_Vision_Project: /usr/local/Cellar/libtensorflow/2.16.1/lib/libtensorflow.dylib
+C_Vision_Project: /usr/local/Cellar/libtensorflow/2.16.1/lib/libtensorflow_framework.dylib
 C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_shape.4.9.0.dylib
 C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_highgui.4.9.0.dylib
 C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_datasets.4.9.0.dylib
@@ -212,10 +234,10 @@ C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_flann.4.9.0.dyl
 C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_photo.4.9.0.dylib
 C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_imgproc.4.9.0.dylib
 C_Vision_Project: /usr/local/Cellar/opencv/4.9.0_9/lib/libopencv_core.4.9.0.dylib
-C_Vision_Project: /usr/local/lib/QtGui.framework/Versions/A/QtGui
-C_Vision_Project: /usr/local/lib/QtCore.framework/Versions/A/QtCore
+C_Vision_Project: /usr/local/Cellar/qt/6.7.0_1/lib/QtGui.framework/Versions/A/QtGui
+C_Vision_Project: /usr/local/Cellar/qt/6.7.0_1/lib/QtCore.framework/Versions/A/QtCore
 C_Vision_Project: CMakeFiles/C_Vision_Project.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable C_Vision_Project"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable C_Vision_Project"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/C_Vision_Project.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -226,7 +248,7 @@ CMakeFiles/C_Vision_Project.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/C_Vision_Project.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/C_Vision_Project.dir/clean
 
-CMakeFiles/C_Vision_Project.dir/depend:
-	cd "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project" "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project" "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build" "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build" "/Users/babadrammeh/C_Vision_Labs/Final Project/C_Vision_Project/build/CMakeFiles/C_Vision_Project.dir/DependInfo.cmake" "--color=$(COLOR)"
+CMakeFiles/C_Vision_Project.dir/depend: include/moc_MainWindow.cpp
+	cd /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/build/CMakeFiles/C_Vision_Project.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/C_Vision_Project.dir/depend
 
