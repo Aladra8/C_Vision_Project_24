@@ -527,13 +527,7 @@ CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o: \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qcursor.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qbitmap.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtabwidget.h \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QLabel \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qlabel.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qframe.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpicture.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevice.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtextdocument.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qurl.h \
+  /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/include/ImageProcessor.h \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/opencv.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/opencv_modules.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/core.hpp \
@@ -710,4 +704,18 @@ CMakeFiles/C_Vision_Project.dir/include/moc_MainWindow.cpp.o: \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/video.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/Cellar/opencv/4.9.0_9/include/opencv4/opencv2/video/background_segm.hpp \
+  /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/include/BallTracker.h \
+  /Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/include/MLModel.h \
+  /usr/local/libtensorflow/include/tensorflow/c/c_api.h \
+  /usr/local/libtensorflow/include/tensorflow/c/c_api_macros.h \
+  /usr/local/libtensorflow/include/tensorflow/c/tf_attrtype.h \
+  /usr/local/libtensorflow/include/tensorflow/c/tf_buffer.h \
+  /usr/local/libtensorflow/include/tensorflow/c/tf_datatype.h \
+  /usr/local/libtensorflow/include/tensorflow/c/tf_status.h \
+  /usr/local/libtensorflow/include/tsl/c/tsl_status.h \
+  /usr/local/libtensorflow/include/tensorflow/c/tf_tensor.h \
+  /usr/local/libtensorflow/include/tensorflow/c/tf_tstring.h \
+  /usr/local/libtensorflow/include/tensorflow/core/platform/ctstring.h \
+  /usr/local/libtensorflow/include/tsl/platform/ctstring.h \
+  /usr/local/libtensorflow/include/tsl/platform/ctstring_internal.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtmochelpers.h

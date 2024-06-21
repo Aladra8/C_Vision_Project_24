@@ -15,18 +15,11 @@
 #define BALLTRACKER_H
 
 #include <opencv2/opencv.hpp>
-#include <vector>
-#include "MLModel.h"
 
 class BallTracker {
 public:
-    BallTracker();
-    void track(const cv::Mat &frame, std::vector<cv::Rect> &trackedBalls);
-    void setMLModel(MLModel* mlModel);
-
-private:
-    cv::Ptr<cv::BackgroundSubtractor> bgSubtractor;
-    MLModel* mlModel;
+    void detectAndTrackBalls(cv::Mat &frame);
+    void drawBoundingBoxes(cv::Mat &frame, const std::vector<cv::Rect> &bboxes);
 };
 
 #endif // BALLTRACKER_H

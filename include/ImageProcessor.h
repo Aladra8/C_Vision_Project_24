@@ -17,18 +17,13 @@
 
 #include <opencv2/opencv.hpp>
 #include <vector>
-#include "MLModel.h"
+#include <string>
 
 class ImageProcessor {
 public:
-    ImageProcessor();
-    void processFrame(const cv::Mat &frame, cv::Mat &outputFrame);
-    void detectBalls(const cv::Mat &frame, std::vector<cv::Rect> &detectedBalls);
-    void setMLModel(MLModel* mlModel);
-
-private:
-    cv::Ptr<cv::SimpleBlobDetector> blobDetector;
-    MLModel* mlModel;
+    void processFrame(cv::Mat &frame);
+    std::vector<cv::Mat> extractFrames(const std::string &videoPath);
+    std::vector<cv::Rect> loadBoundingBoxes(const std::string &bboxFilePath);
 };
 
 #endif // IMAGEPROCESSOR_H

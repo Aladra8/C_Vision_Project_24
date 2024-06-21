@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = -DQT_CORE_LIB -DQT_GUI_LIB -DQT_WIDGETS_LIB
 
-CXX_INCLUDES = -I/usr/local/Cellar/libtensorflow/2.16.1/include -I/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/include -isystem /usr/local/Cellar/opencv/4.9.0_9/include/opencv4 -isystem /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers -iframework /usr/local/Cellar/qt/6.7.0_1/lib -isystem /usr/local/Cellar/qt/6.7.0_1/lib/QtCore.framework/Headers -isystem /usr/local/Cellar/qt/6.7.0_1/share/qt/mkspecs/macx-clang -isystem /usr/local/Cellar/qt/6.7.0_1/include -isystem /usr/local/Cellar/qt/6.7.0_1/lib/QtGui.framework/Headers -isystem /usr/local/include
+CXX_INCLUDES = -I/usr/local/libtensorflow/include -I/Users/babadrammeh/C_Vision_Labs/FinalProject/C_Vision_Project/include -isystem /usr/local/Cellar/opencv/4.9.0_9/include/opencv4 -isystem /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers -iframework /usr/local/Cellar/qt/6.7.0_1/lib -isystem /usr/local/Cellar/qt/6.7.0_1/lib/QtCore.framework/Headers -isystem /usr/local/Cellar/qt/6.7.0_1/share/qt/mkspecs/macx-clang -isystem /usr/local/Cellar/qt/6.7.0_1/include -isystem /usr/local/Cellar/qt/6.7.0_1/lib/QtGui.framework/Headers -isystem /usr/local/include
 
 CXX_FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -mmacosx-version-min=12.6 -fPIC
 

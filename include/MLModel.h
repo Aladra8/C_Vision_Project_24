@@ -21,20 +21,23 @@
 
 #include <opencv2/opencv.hpp>
 #include <tensorflow/c/c_api.h>
+#include <string>
 #include <vector>
 
-class MLModel
-{
+class MLModel {
 public:
     MLModel();
     ~MLModel();
     void loadModel(const std::string &modelPath);
-    std::vector<cv::Rect> detectObjects(const cv::Mat &frame); // Ensure this declaration exists
+    void trainModel(const std::string &datasetPath);
+    void predictOutcome(cv::Mat &frame);
 
 private:
-    TF_Graph *graph;
-    TF_Session *session;
-    TF_Status *status;
+    std::vector<cv::Mat> loadDataset(const std::string &datasetPath);
+    TF_Graph* graph;
+    TF_Session* session;
+    TF_Status* status;
+    TF_SessionOptions* sessionOptions;
 };
 
 #endif // MLMODEL_H

@@ -2,19 +2,21 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include <QLabel>
-#include <opencv2/opencv.hpp>
+#include "ImageProcessor.h"
+#include "BallTracker.h"
+#include "MLModel.h"
 
 class MainWindow : public QMainWindow {
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
-    void displayFrame(const cv::Mat &frame);
+    MainWindow(QWidget *parent = nullptr);
+    ~MainWindow() override;
 
 private:
-    QLabel *videoLabel;  // Add a QLabel for displaying the video
+    ImageProcessor imageProcessor;
+    BallTracker ballTracker;
+    MLModel mlModel;
 };
 
 #endif // MAINWINDOW_H
