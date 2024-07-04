@@ -1,16 +1,26 @@
-#ifndef VIDEOPROCESSOR_H
-#define VIDEOPROCESSOR_H
+#ifndef VIDEO_PROCESSOR_H
+#define VIDEO_PROCESSOR_H
 
-#include <string>
+#include <opencv2/core.hpp>
+#include <opencv2/imgproc.hpp>
+#include <opencv2/highgui.hpp>
 #include <vector>
-#include <opencv2/opencv.hpp>
+#include <iostream>
 
-class VideoProcessor{
+class VideoProcessor {
 public:
+    std::vector<cv::Point2f> findCorners(const std::string& videoPath);
     void processVideo(const std::string& videoPath);
+    void segmentField(cv::Mat &frame, const std::vector<cv::Point2f> &corners, const std::vector<std::pair<cv::Point2f, int>>& balls);
 
 private:
-    std::vector<cv::Point2f> findCorners(const std::string& videoPath);
+    std::vector<cv::Point2f> sortCorners(const std::vector<cv::Point2f>& corners);
+    void drawMinimap(cv::Mat& frame, const std::vector<cv::Point2f>& corners);
+    void drawSphere(cv::Mat& frame, const std::vector<std::pair<cv::Point2f, int>>& balls);
+    
+   
+    std::vector<cv::Point2f> dstCorners;
+    cv::Mat perspectiveTransform;
 };
 
-#endif // VIDEOPROCESSOR_H
+#endif // VIDEO_PROCESSOR_H
