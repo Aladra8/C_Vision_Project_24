@@ -4,25 +4,31 @@
 #include <cmath>
 #include <algorithm>
 
-std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPath){
+#include <opencv2/opencv.hpp>
+#include <vector>
+#include <string>
+#include <stdexcept>
+#include <iostream>
+
+
+std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPath) {
     cv::VideoCapture cap(videoPath);
-    if (!cap.isOpened()){
-        std::cerr << "Error opening file: " << videoPath << std::endl;
-        return {};
+    if (!cap.isOpened()) {
+        throw std::invalid_argument("Error opening file: " + videoPath);
     }
 
     cv::Mat frame, grayFrame, edges;
     cv::Scalar lowerBound(45, 80, 80);   // Lower HSV threshold for color filtering
     cv::Scalar upperBound(140, 255, 255); // Upper HSV threshold for color filtering
     const float minCornerDistance = 150.0; // Minimum distance between corners
+    const int margin = 50;  // Margin to ignore
 
-    while (true){
+    while (true) {
         cap >> frame;
         if (frame.empty()) break;
 
         // Mask to exclude outer edges of the image
         cv::Mat mask = cv::Mat::ones(frame.size(), CV_8UC1) * 255;
-        int margin = 50;  // Margin to ignore
         cv::rectangle(mask, cv::Point(0, 0), cv::Point(frame.cols, margin), cv::Scalar(0), cv::FILLED);
         cv::rectangle(mask, cv::Point(0, frame.rows - margin), cv::Point(frame.cols, frame.rows), cv::Scalar(0), cv::FILLED);
 
@@ -43,15 +49,15 @@ std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPat
 
         // Remove lines that are close to each other or merge parallel lines
         std::vector<cv::Vec2f> filteredLines; // Contains the lines to keep
-        for (size_t i = 0; i < lines.size(); ++i){
+        for (size_t i = 0; i < lines.size(); ++i) {
             cv::Vec2f currentLine = lines[i];
             bool keepLine = true;
-            for (size_t j = 0; j < filteredLines.size(); ++j){
+            for (size_t j = 0; j < filteredLines.size(); ++j) {
                 cv::Vec2f storedLine = filteredLines[j];
                 // Calculate differences between current line and stored line
                 float rhoDiff = std::abs(currentLine[0] - storedLine[0]);
                 float thetaDiff = std::abs(currentLine[1] - storedLine[1]);
-                if (rhoDiff < 20 && thetaDiff < CV_PI / 18){
+                if (rhoDiff < 20 && thetaDiff < CV_PI / 18) {
                     keepLine = false;
                     // Calculate average line if lines are close and parallel
                     float avgRho = (currentLine[0] + storedLine[0]) / 2;
@@ -60,7 +66,7 @@ std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPat
                     break;
                 }
             }
-            if (keepLine){
+            if (keepLine) {
                 filteredLines.push_back(currentLine);
             }
         }
@@ -69,8 +75,8 @@ std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPat
         std::vector<cv::Point2f> corners; // Contains the corners' coordinates
 
         // Iterate through filtered lines to find intersections and group nearby parallel lines
-        for (size_t i = 0; i < filteredLines.size(); ++i){
-            for (size_t j = i + 1; j < filteredLines.size(); ++j){
+        for (size_t i = 0; i < filteredLines.size(); ++i) {
+            for (size_t j = i + 1; j < filteredLines.size(); ++j) {
                 cv::Vec2f line1 = filteredLines[i];
                 cv::Vec2f line2 = filteredLines[j];
 
@@ -78,8 +84,15 @@ std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPat
                 cv::Point2f intersection;
                 float rho1 = line1[0], theta1 = line1[1];
                 float rho2 = line2[0], theta2 = line2[1];
-                intersection.x = (rho2 * sin(theta1) - rho1 * sin(theta2)) / sin(theta1 - theta2);
-                intersection.y = (rho1 * cos(theta2) - rho2 * cos(theta1)) / sin(theta1 - theta2);
+                float denominator = sin(theta1 - theta2);
+
+                // Avoid division by zero
+                if (std::abs(denominator) < 1e-10) {
+                    continue;
+                }
+
+                intersection.x = (rho2 * sin(theta1) - rho1 * sin(theta2)) / denominator;
+                intersection.y = (rho1 * cos(theta2) - rho2 * cos(theta1)) / denominator;
 
                 // Check if intersection point is within image bounds and not too close to image edges
                 if (intersection.x > 0 && intersection.x < frame.cols &&
@@ -87,15 +100,15 @@ std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPat
                     bool keepCorner = true;
 
                     // Check distance from existing corners
-                    for (const auto& corner : corners){
-                        if (cv::norm(intersection - corner) < minCornerDistance){
+                    for (const auto& corner : corners) {
+                        if (cv::norm(intersection - corner) < minCornerDistance) {
                             keepCorner = false;
                             break;
                         }
                     }
 
                     // If intersection point is not too close to existing corners, add it
-                    if (keepCorner){
+                    if (keepCorner) {
                         corners.push_back(intersection);
                     }
                 }
@@ -103,12 +116,12 @@ std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPat
         }
 
         // Return corners only if exactly 4 corners are found
-        if (corners.size() == 4){
+        if (corners.size() == 4) {
             return corners;
         }
     }
 
-    return {};
+    throw std::runtime_error("Could not find exactly 4 corners in the video.");
 }
 
 std::vector<cv::Point2f> VideoProcessor::sortCorners(const std::vector<cv::Point2f>& corners) {
@@ -146,7 +159,7 @@ std::vector<cv::Point2f> VideoProcessor::sortCorners(const std::vector<cv::Point
 
     // Rotate if line 01 is shorter than 12
     if (dist01 < dist12 || dist23 < dist12 || dist01 > dist23 + dist23 * margin || dist23 > dist01 + dist01 * margin) {
-        // Reorder corners so that index 0 becomes 1, 1 becomes 2, ..., 3 becomes 0
+        // Reorder corners so that index 0 becomes 1, 1 becomes 2, 2 becomes 3, 3 becomes 0
         std::vector<cv::Point2f> rotatedCorners = {
             sortedCorners[1],
             sortedCorners[2],
@@ -206,9 +219,9 @@ void VideoProcessor::drawMinimap(cv::Mat& frame, const std::vector<cv::Point2f>&
 void VideoProcessor::drawSphere(cv::Mat& frame, const std::vector<std::pair<cv::Point2f, int>>& balls) {
     // Ensure minimap coordinates have been initialized
     if (dstCorners.empty()) {
-        std::cerr << "Error: Minimap coordinates are not initialized" << std::endl;
-        return;
+        throw std::runtime_error("Error: Minimap coordinates are not initialized");
     }
+
 
     // Draw spheres inside the segmented field
     for (const auto& ball : balls) {
@@ -242,8 +255,7 @@ void VideoProcessor::drawSphere(cv::Mat& frame, const std::vector<std::pair<cv::
                 ballColor = cv::Scalar(0, 0, 255);
                 break;
             default:
-                std::cerr << "Error: Invalid id for ball color" << std::endl;
-                return;
+                throw std::runtime_error("Error: Invalid id for ball color");
         }
 
         // Draw filled circle for the ball
@@ -255,11 +267,6 @@ void VideoProcessor::drawSphere(cv::Mat& frame, const std::vector<std::pair<cv::
 }
 
 void VideoProcessor::segmentField(cv::Mat &frame, const std::vector<cv::Point2f> &corners, const std::vector<std::pair<cv::Point2f, int>>& balls) {
-    // Verify that exactly 4 corners are provided for field segmentation
-    if (corners.size() != 4) {
-        std::cerr << "Error: Exactly 4 corners are required for field segmentation" << std::endl;
-        return;
-    }
 
     // Create a vector of points to represent the polygon of corners
     std::vector<cv::Point> polygon;
@@ -286,8 +293,7 @@ void VideoProcessor::segmentField(cv::Mat &frame, const std::vector<cv::Point2f>
 
         // Check if the ball id is valid
         if (ballId < 0 || ballId > 3) {
-            std::cerr << "Error: Ball id must be between 0 and 3" << std::endl;
-            continue;
+            throw std::domain_error("Error: Ball id must be between 0 and 3");
         }
 
         // Draw the ball with the appropriate color inside the segmented polygon
@@ -304,67 +310,68 @@ void VideoProcessor::segmentField(cv::Mat &frame, const std::vector<cv::Point2f>
     }
 }
 
+void VideoProcessor::drawBorders(cv::Mat& frame, const std::vector<cv::Point2f>& corners){
+    // Draw the borders of the pool table, connects the lines in clockwise order
+    cv::line(frame, corners[0], corners[1], cv::Scalar(0, 0, 255), 2); // Red line
+    cv::line(frame, corners[1], corners[2], cv::Scalar(0, 255, 0), 2); // Green line
+    cv::line(frame, corners[2], corners[3], cv::Scalar(255, 0, 0), 2); // Blue line
+    cv::line(frame, corners[3], corners[0], cv::Scalar(0, 255, 255), 2); // Yellow line
+}
+
 
 void VideoProcessor::processVideo(const std::string& videoPath) {
-    // Trova i corners nel video
+    // Find corners in the video
     std::vector<cv::Point2f> corners = findCorners(videoPath);
 
-    // Verifica se sono stati trovati esattamente 4 corners
-    if (corners.size() != 4) {
-        std::cerr << "Error: Could not find exactly 4 corners" << std::endl;
-        return;
-    }
-
-    // Ordina i corners in senso orario
+    // Sort corners clockwise
     corners = sortCorners(corners);
 
-    // Apre il video
+    // Open the video
     cv::VideoCapture cap(videoPath);
     if (!cap.isOpened()) {
-        std::cerr << "Error opening file: " << videoPath << std::endl;
-        return;
+        throw std::invalid_argument("Error opening file: " + videoPath);
     }
 
-    // Esempio di coordinate delle sfere all'interno dell'area segmentata
-    std::vector<std::pair<cv::Point2f, int>> balls;
-    balls.push_back(std::make_pair(cv::Point2f(450, 300), 0)); // Sfera bianca
-    balls.push_back(std::make_pair(cv::Point2f(400, 250), 1)); // Sfera nera
+    int i = 0;
 
     cv::Mat frame;
     while (true) {
         cap >> frame;
         if (frame.empty()) break;
 
-        cv::Mat result = frame.clone(); // Crea una copia del frame per risultati
+        // Example coordinates of balls inside the segmented area
+        std::vector<std::pair<cv::Point2f, int>> balls;
+        balls.push_back(std::make_pair(cv::Point2f(450 + i, 300 + i), 0)); // White ball
+        balls.push_back(std::make_pair(cv::Point2f(400 - i/4, 250 - i/4), 1)); // Black ball
+        i++;
 
-        // Disegna i corners trovati come cerchi rossi
+        cv::Mat result = frame.clone(); // Create a copy of the frame for results
+
+        // Draw found corners as red circles
         for (size_t i = 0; i < corners.size(); ++i) {
-            cv::circle(result, corners[i], 5, cv::Scalar(0, 0, i * 60), -1); // Colora i corners
+            cv::circle(result, corners[i], 5, cv::Scalar(0, 0, i * 60), -1); // Color the corners
         }
 
-        // Segmenta l'area interna ai corners con colore verde e disegna le sfere
+        // Draw the borders of the pool table
+        drawBorders(result, corners);
+
+        // Segment the area inside the corners with green color and draw the balls
         segmentField(result, corners, balls);
 
-        // Disegna i bordi della tavola da biliardo
-        cv::line(result, corners[0], corners[1], cv::Scalar(0, 0, 255), 2); // Linea rossa
-        cv::line(result, corners[1], corners[2], cv::Scalar(0, 255, 0), 2); // Linea verde
-        cv::line(result, corners[2], corners[3], cv::Scalar(255, 0, 0), 2); // Linea blu
-        cv::line(result, corners[3], corners[0], cv::Scalar(0, 255, 255), 2); // Linea gialla
-
-        // Disegna la minimappa
+        // Draw the minimap
         drawMinimap(result, corners);
 
-        // Disegna le sfere sulla tavola da biliardo
+        // Draw the balls on the pool table
         drawSphere(result, balls);
 
-        // Mostra il frame risultante con i corners, i bordi, la minimappa e le sfere
+        // Show the resulting frame with corners, borders, minimap, and balls
         cv::imshow("Detected Corners, Borders and Minimap", result);
 
-        // Attendi per il tasto premuto o esci se non c'è più input
+        // Wait for a key press or exit if there is no more input
         if (cv::waitKey(30) >= 0) break;
     }
 
-    // Rilascia il video e chiudi tutte le finestre
+    // Release the video and close all windows
     cap.release();
     cv::destroyAllWindows();
 }
