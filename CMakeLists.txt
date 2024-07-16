@@ -42,6 +42,7 @@ add_executable(C_Vision_Project
     src/MLModel.cpp
     src/MainWindow.cpp
     src/VideoProcessor.cpp
+    src/BallTracking.cpp
 )
 
 target_link_libraries(C_Vision_Project ${OpenCV_LIBS} Qt6::Widgets)
