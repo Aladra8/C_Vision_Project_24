@@ -1,14 +1,15 @@
 #include "VideoProcessor.h"
+#include "BallTracking.h"
+
 #include <iostream>
 #include <opencv2/opencv.hpp>
 #include <cmath>
 #include <algorithm>
 
-#include <opencv2/opencv.hpp>
 #include <vector>
 #include <string>
 #include <stdexcept>
-#include <iostream>
+
 
 
 std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPath) {
@@ -178,7 +179,7 @@ void VideoProcessor::drawMinimap(cv::Mat& frame, const std::vector<cv::Point2f>&
     const int minimapWidth = 300;
     const int minimapHeight = 150;
 
-    // Define the four corners of the minimap at the bottom-left without margin
+    // Define the four corners of the minimap at the bottom-left
     if (dstCorners.empty()) {
         dstCorners = {
             cv::Point2f(0, frame.rows - minimapHeight),
@@ -216,17 +217,17 @@ void VideoProcessor::drawMinimap(cv::Mat& frame, const std::vector<cv::Point2f>&
     cv::line(frame, dstCornersInt[3], dstCornersInt[0], cv::Scalar(0, 255, 255), 2); // Yellow
 }
 
-void VideoProcessor::drawSphere(cv::Mat& frame, const std::vector<std::pair<cv::Point2f, int>>& balls) {
+void VideoProcessor::drawSphere(cv::Mat& frame, const std::unordered_map<int, BallInfo>& detectedBalls) {
     // Ensure minimap coordinates have been initialized
     if (dstCorners.empty()) {
         throw std::runtime_error("Error: Minimap coordinates are not initialized");
     }
 
-
     // Draw spheres inside the segmented field
-    for (const auto& ball : balls) {
-        cv::Point2f tableCoordinates = ball.first;
-        int id = ball.second;
+    for (const auto& ball : detectedBalls) {
+        const BallInfo& ballInfo = ball.second;
+        cv::Point2f tableCoordinates = ballInfo.center;
+
 
         // Transform sphere coordinates from the main table to the minimap
         cv::Point2f minimapSphereCoordinates;
@@ -239,34 +240,15 @@ void VideoProcessor::drawSphere(cv::Mat& frame, const std::vector<std::pair<cv::
         // Extract transformed coordinates
         minimapSphereCoordinates = dstCornersTransformed[0];
 
-        // Choose ball color based on id
-        cv::Scalar ballColor;
-        switch (id) {
-            case 0:  // White
-                ballColor = cv::Scalar(255, 255, 255);
-                break;
-            case 1:  // Black
-                ballColor = cv::Scalar(0, 0, 0);
-                break;
-            case 2:  // Blue
-                ballColor = cv::Scalar(255, 0, 0);
-                break;
-            case 3:  // Red
-                ballColor = cv::Scalar(0, 0, 255);
-                break;
-            default:
-                throw std::runtime_error("Error: Invalid id for ball color");
-        }
-
         // Draw filled circle for the ball
-        cv::circle(frame, minimapSphereCoordinates, 5, ballColor, -1);
+        cv::circle(frame, minimapSphereCoordinates, 5, ballInfo.color, -1);
 
         // Draw black outline around the ball
         cv::circle(frame, minimapSphereCoordinates, 5, cv::Scalar(0, 0, 0), 2);
     }
 }
 
-void VideoProcessor::segmentField(cv::Mat &frame, const std::vector<cv::Point2f> &corners, const std::vector<std::pair<cv::Point2f, int>>& balls) {
+void VideoProcessor::segmentField(cv::Mat &frame, const std::vector<cv::Point2f> &corners) {
 
     // Create a vector of points to represent the polygon of corners
     std::vector<cv::Point> polygon;
@@ -286,28 +268,6 @@ void VideoProcessor::segmentField(cv::Mat &frame, const std::vector<cv::Point2f>
     // Apply the mask to fill the polygon with green color in the original image
     frame.setTo(cv::Scalar(0, 255, 0), mask);  // Green color
 
-    // Draw the spheres inside the segmented field
-    for (const auto& ball : balls) {
-        cv::Point2f ballCenter = ball.first;
-        int ballId = ball.second;
-
-        // Check if the ball id is valid
-        if (ballId < 0 || ballId > 3) {
-            throw std::domain_error("Error: Ball id must be between 0 and 3");
-        }
-
-        // Draw the ball with the appropriate color inside the segmented polygon
-        cv::Scalar ballColor;
-        switch (ballId) {
-            case 0: ballColor = cv::Scalar(255, 255, 255); break; // White
-            case 1: ballColor = cv::Scalar(0, 0, 0); break;       // Black
-            case 2: ballColor = cv::Scalar(255, 0, 0); break;     // Blue
-            case 3: ballColor = cv::Scalar(0, 0, 255); break;     // Red
-        }
-
-        cv::circle(frame, ballCenter, 10, ballColor, -1); // Draw filled circle for the ball
-        cv::circle(frame, ballCenter, 10, cv::Scalar(0, 0, 0), 2); // Draw black outline around the ball
-    }
 }
 
 void VideoProcessor::drawBorders(cv::Mat& frame, const std::vector<cv::Point2f>& corners){
@@ -332,6 +292,8 @@ void VideoProcessor::processVideo(const std::string& videoPath) {
         throw std::invalid_argument("Error opening file: " + videoPath);
     }
 
+
+
     int i = 0;
 
     cv::Mat frame;
@@ -339,11 +301,6 @@ void VideoProcessor::processVideo(const std::string& videoPath) {
         cap >> frame;
         if (frame.empty()) break;
 
-        // Example coordinates of balls inside the segmented area
-        std::vector<std::pair<cv::Point2f, int>> balls;
-        balls.push_back(std::make_pair(cv::Point2f(450 + i, 300 + i), 0)); // White ball
-        balls.push_back(std::make_pair(cv::Point2f(400 - i/4, 250 - i/4), 1)); // Black ball
-        i++;
 
         cv::Mat result = frame.clone(); // Create a copy of the frame for results
 
@@ -356,13 +313,15 @@ void VideoProcessor::processVideo(const std::string& videoPath) {
         drawBorders(result, corners);
 
         // Segment the area inside the corners with green color and draw the balls
-        segmentField(result, corners, balls);
+        segmentField(result, corners);
+
+        std::unordered_map<int, BallInfo> detectedBalls = detectAndDrawBalls(videoPath, frame, result);
 
         // Draw the minimap
         drawMinimap(result, corners);
 
         // Draw the balls on the pool table
-        drawSphere(result, balls);
+        drawSphere(result, detectedBalls);
 
         // Show the resulting frame with corners, borders, minimap, and balls
         cv::imshow("Detected Corners, Borders and Minimap", result);
