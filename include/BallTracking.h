@@ -1,10 +1,10 @@
-#ifndef BALL_TRACKING_H
-#define BALL_TRACKING_H
+#ifndef BALLTRACKING_H
+#define BALLTRACKING_H
 
 #include <opencv2/opencv.hpp>
 #include <unordered_map>
 
-// Structure to hold information about each ball
+// Structure to store ball information
 struct BallInfo {
     cv::Point2f center;
     int radius;
@@ -12,20 +12,15 @@ struct BallInfo {
     cv::Scalar color;
 };
 
-// Global variable to store tracked balls
+// Global variable to store detected balls
 extern std::unordered_map<int, BallInfo> balls;
 
-// Function to determine the predominant color within a circle
-cv::Scalar determineColor(const cv::Mat& frame, const cv::Vec3f& circle);
-
-// Function to detect balls in a frame
+// Function declarations
+cv::Scalar determineColor(const cv::Mat& frame, const cv::Vec3f& circle, const cv::Vec3b& avgIntensity, double avgBrightness);
 std::unordered_map<int, BallInfo> detectBalls(cv::Mat& frame, const std::vector<cv::Point2f>& corners, int& ballId);
-
-// Function to draw detected balls on a frame
 void drawBalls(cv::Mat& frame, const std::unordered_map<int, BallInfo>& balls);
-
-// Function to detect and draw balls in a video
-
 std::unordered_map<int, BallInfo> detectAndDrawBalls(const std::string& videoPath, cv::Mat& frame, cv::Mat& result);
+double calculateAverageBrightness(const cv::Mat& frame, const std::vector<cv::Point>& roiCorners);
+cv::Vec3b calculateAverageIntensity(const cv::Mat& frame, const std::vector<cv::Point>& roiCorners);
 
-#endif // BALL_TRACKING_H
+#endif // BALLTRACKING_H
