@@ -1,5 +1,6 @@
 #include "VideoProcessor.h"
 #include "BallTracking.h"
+#include <filesystem>
 
 // Detects the borders given a video path
 std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPath){
@@ -290,7 +291,6 @@ void VideoProcessor::drawBorders(cv::Mat& frame, const std::vector<cv::Point2f>&
 
 // Process the whole video, applying table/ball segmentation and 2D view
 void VideoProcessor::processVideo(const std::string& videoPath){
-    
     // Open the video
     cv::VideoCapture cap(videoPath);
     if (!cap.isOpened()){
@@ -304,18 +304,22 @@ void VideoProcessor::processVideo(const std::string& videoPath){
     corners = sortCorners(corners);
 
     cv::Mat frame;
+
+    bool saveFrames = false; // Set to true to save the first and last frame
+    cv::Mat firstFrame, lastFrame;
+    bool firstFrameCaptured = false;
+    
+    // Create the directory if it doesn't exist
+    if (saveFrames){
+        std::__fs::filesystem::create_directory("../frame");
+    }
+
     while (true){
         cap >> frame;
         if (frame.empty()) break;
 
         cv::Mat result = frame.clone(); // Create a copy of the frame for results
 
-/* 
-        // Draw found corners as red circles, it can be used to visualize the order in which the are stored
-        for (size_t i = 0; i < corners.size(); ++i){
-            cv::circle(result, corners[i], 5, cv::Scalar(0, 0, i * 60), -1); // Color the corners
-        }
-*/
         // Draw the borders of the pool table
         drawBorders(result, corners);
 
@@ -335,11 +339,31 @@ void VideoProcessor::processVideo(const std::string& videoPath){
 
         // Wait for a key press or exit if there is no more input
         if (cv::waitKey(30) >= 0) break;
+
+        // If the variable saveFrames is true, then save the first and last frame 
+        if(saveFrames == true){
+        // Capture the first frame
+        if (!firstFrameCaptured){
+            firstFrame = result.clone();
+            firstFrameCaptured = true;
+        }
+
+            lastFrame = result.clone(); // Capture the last frame in the loop
+        }
+
+    }
+
+    // Save the first and last frame inside the "frame" directory 
+    if (saveFrames){
+        std::string directory = "../frame";
+        cv::imwrite(directory + "/frame_first.jpg", firstFrame);
+        cv::imwrite(directory + "/frame_last.jpg", lastFrame);
     }
 
     // Release the video and close all windows
     cap.release();
     cv::destroyAllWindows();
 }
+
 
 
