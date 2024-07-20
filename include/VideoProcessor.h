@@ -1,3 +1,8 @@
+/**
+ * @author Luca Lavezzi 2131600
+ * email: luca.lavezzi@studenti.unipd.it 
+*/
+
 #ifndef VIDEO_PROCESSOR_H
 #define VIDEO_PROCESSOR_H
 

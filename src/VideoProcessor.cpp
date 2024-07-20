@@ -1,3 +1,11 @@
+/**
+ * @author Luca Lavezzi 2131600
+ * email: luca.lavezzi@studenti.unipd.it 
+ * 
+ * The VideoProcessor class manages all the aspects related to the billiard table: detecting the borders,
+ * segmenting the table and the billiard balls and creation of the 2D table visualization.
+*/
+
 #include "VideoProcessor.h"
 #include "BallTracking.h"
 #include <filesystem>
