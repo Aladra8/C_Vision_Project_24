@@ -11,29 +11,44 @@ int main(int argc, char *argv[]) {
 /*
 This is the main that i use
 
-#include <opencv2/opencv.hpp>
-#include <stdexcept> 
-#include <typeinfo>  
 #include "VideoProcessor.h"
 #include "BallTracking.h"
 
 int main(){
-    try{
-        // Insert video path here
-        std::string videoPath = "";
-        VideoProcessor v;
-        v.processVideo(videoPath);
-    } 
-    catch (const std::exception& e){
-        std::cerr << "Exception caught: " << e.what() << std::endl;
-        std::cerr << "Description: " << typeid(e).name() << std::endl;
+    // Base directory containing all folders
+    std::string baseDir = "../Dataset";
+
+    // List of folders to iterate
+    std::vector<std::string> folderNames = {
+        "game1_clip1", "game1_clip2", "game1_clip3", "game1_clip4",
+        "game2_clip1", "game2_clip2",
+        "game3_clip1", "game3_clip2",
+        "game4_clip1", "game4_clip2"
+    };
+
+    // Iterate through each folder and process videos
+    for (const auto& folderName : folderNames){
+        std::string videoFileName = folderName + ".mp4";
+        std::string videoPath = baseDir + "/" + folderName + "/" + videoFileName;
+        std::cout << "Processing video: " << videoPath << std::endl;
+
+        try{
+            VideoProcessor v;
+            v.processVideo(videoPath);
+        }
+        catch (const std::exception& e){
+            std::cerr << "Exception caught while processing video " << videoPath << ": " << e.what() << std::endl;
+            std::cerr << "Description: " << typeid(e).name() << std::endl;
+        }
+        catch (const cv::Exception& e){
+            std::cerr << "OpenCV exception while processing video " << videoPath << ": " << e.what() << std::endl;
+            std::cerr << "Description: " << typeid(e).name() << std::endl;
+        }
     }
-    catch (const cv::Exception& e){
-        std::cerr << "OpenCV exception: " << e.what() << std::endl;
-        std::cerr << "Description: " << typeid(e).name() << std::endl;
-    }
+
     return 0;
 }
+
 
 
 
