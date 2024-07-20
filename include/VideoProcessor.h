@@ -13,18 +13,15 @@ public:
     
     void processVideo(const std::string& videoPath);
     std::vector<cv::Point2f> findCorners(const std::string& videoPath);
-    void drawBorders(cv::Mat& frame, const std::vector<cv::Point2f>& corners);
     std::vector<cv::Point2f> sortCorners(const std::vector<cv::Point2f>& corners);
     
 private:
 
+    void drawBorders(cv::Mat& frame, const std::vector<cv::Point2f>& corners);
     void segmentField(cv::Mat &frame, const std::vector<cv::Point2f> &corners);
-
-
     void drawMinimap(cv::Mat& frame, const std::vector<cv::Point2f>& corners);
     void drawSphere(cv::Mat& frame, const std::unordered_map<int, BallInfo>& detectedBalls);
     
-   
     std::vector<cv::Point2f> dstCorners;
     cv::Mat perspectiveTransform;
 };

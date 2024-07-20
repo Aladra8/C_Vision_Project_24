@@ -2,7 +2,16 @@
 #include "BallTracking.h"
 #include <filesystem>
 
-// Detects the borders given a video path
+/**
+ * Detects the borders given a video path.
+ * This function processes a video to find and return the corners of a pool table.
+ * 
+ * @param videoPath The path to the video file.
+ * @return std::vector<cv::Point2f> A vector containing the coordinates of the four corners of the table.
+ * 
+ * @throws std::invalid_argument If the video file cannot be opened.
+ * @throws std::runtime_error If exactly 4 corners cannot be found in the video.
+*/
 std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPath){
     cv::VideoCapture cap(videoPath);
     if (!cap.isOpened()){
@@ -116,7 +125,13 @@ std::vector<cv::Point2f> VideoProcessor::findCorners(const std::string& videoPat
     throw std::runtime_error("Could not find exactly 4 corners in the video.");
 }
 
-// Sorts the corners in the same order for every video scenario
+/**
+ * Sorts the corners in the same order for every video scenario.
+ * 
+ * @param corners A vector of four cv::Point2f representing the corners to be sorted.
+ * 
+ * @return A vector of cv::Point2f containing the sorted corners in clockwise order.
+*/
 std::vector<cv::Point2f> VideoProcessor::sortCorners(const std::vector<cv::Point2f>& corners){
     // Calculate centroid of the four corners
     cv::Point2f centroid(0, 0);
@@ -165,7 +180,12 @@ std::vector<cv::Point2f> VideoProcessor::sortCorners(const std::vector<cv::Point
     return sortedCorners;
 }
 
-// Draws a 2D view of the playing field
+/**
+ * Draws a 2D view of the playing field.
+ * 
+ * @param frame The main frame where the minimap will be drawn.
+ * @param corners A vector of four cv::Point2f representing the corners of the main table.
+*/
 void VideoProcessor::drawMinimap(cv::Mat& frame, const std::vector<cv::Point2f>& corners){
     // Dimensions of the minimap
     const int minimapWidth = 300;
@@ -195,15 +215,15 @@ void VideoProcessor::drawMinimap(cv::Mat& frame, const std::vector<cv::Point2f>&
 
     // Draw the outer border
     cv::rectangle(minimap, cv::Point(0, 0), 
-                  cv::Point(minimapWidth + 2 * padding - 1, minimapHeight + 2 * padding - 1), 
-                  cv::Scalar(0, 0, 0), borderThickness);
+    cv::Point(minimapWidth + 2 * padding - 1, minimapHeight + 2 * padding - 1), 
+    cv::Scalar(0, 0, 0), borderThickness);
 
     // Draw the borders of the pool table
     cv::rectangle(minimap, cv::Point(padding, padding), 
-                  cv::Point(minimapWidth + padding - 1, minimapHeight + padding - 1), 
-                  cv::Scalar(0, 0, 0), borderThickness);
+        cv::Point(minimapWidth + padding - 1, minimapHeight + padding - 1), 
+        cv::Scalar(0, 0, 0), borderThickness);
 
-    // Pocket positions
+    // Pocket positions to enchance the aspect of the 2D view
     std::vector<cv::Point> pocketPositions = {
         cv::Point(padding, padding),  // Top-left corner
         cv::Point(minimapWidth / 2 + padding, padding), // Top-center
@@ -214,18 +234,25 @@ void VideoProcessor::drawMinimap(cv::Mat& frame, const std::vector<cv::Point2f>&
     };
 
     for (const auto& pos : pocketPositions){
-        cv::circle(minimap, pos, pocketRadius, cv::Scalar(0, 0, 0), -1);  // Draw black filled circle
-        cv::circle(minimap, pos, pocketRadius - 2, cv::Scalar(255, 255, 255), -1);  // Draw smaller white filled circle
+        cv::circle(minimap, pos, pocketRadius, cv::Scalar(0, 0, 0), -1); 
+        cv::circle(minimap, pos, pocketRadius - 2, cv::Scalar(255, 255, 255), -1); 
     }
 
     // Position of the minimap on the main frame
     cv::Rect roi(cv::Point(0, frame.rows - minimapHeight - 2 * padding), minimap.size());
 
-    // Copy the minimap with white background onto the main frame
+    // Copy of the minimap with white background onto the main frame
     minimap.copyTo(frame(roi));
 }
 
-// Draws the detected balls on the 2D view
+/**
+ * Draws the detected balls on the 2D view.
+ *
+ * @param frame The main frame where the balls will be drawn.
+ * @param detectedBalls An unordered_map<int, BallInfo> containing the detected balls, where the key is the ball ID and the value is the BallInfo.
+ *
+ * @throws std::runtime_error If the 2D view coordinates have not been initialized 
+*/
 void VideoProcessor::drawSphere(cv::Mat& frame, const std::unordered_map<int, BallInfo>& detectedBalls){
     // Ensure minimap coordinates have been initialized
     if (dstCorners.empty()){
@@ -257,7 +284,12 @@ void VideoProcessor::drawSphere(cv::Mat& frame, const std::unordered_map<int, Ba
     }
 }
 
-// Segments the playing field by filling the polygon determined by the corners
+/**
+ * Segments the playing field by filling the polygon determined by the corners.
+ *
+ * @param frame The main frame where the playing field will be segmented.
+ * @param corners A vector of cv::Point2f containing the corners of the playing field.
+*/
 void VideoProcessor::segmentField(cv::Mat &frame, const std::vector<cv::Point2f> &corners){
 
     // Create a vector of points to represent the polygon of corners
@@ -276,11 +308,15 @@ void VideoProcessor::segmentField(cv::Mat &frame, const std::vector<cv::Point2f>
     cv::fillPoly(mask, pts, cv::Scalar(255));
 
     // Apply the mask to fill the polygon with green color in the original image
-    frame.setTo(cv::Scalar(0, 255, 0), mask);  // Green color
-
+    frame.setTo(cv::Scalar(0, 255, 0), mask);  // Green color used for segmentation
 }
 
-// Draws the lines connecting the borders
+/**
+ * Draws the lines connecting the borders.
+ *
+ * @param frame The main frame where the borders will be drawn.
+ * @param corners A vector of cv::Point2f containing the corners of the playing field.
+*/
 void VideoProcessor::drawBorders(cv::Mat& frame, const std::vector<cv::Point2f>& corners){
     // Draw the borders of the pool table, connects the lines in clockwise order
     cv::line(frame, corners[0], corners[1], cv::Scalar(0, 255, 255), 2); 
@@ -289,7 +325,14 @@ void VideoProcessor::drawBorders(cv::Mat& frame, const std::vector<cv::Point2f>&
     cv::line(frame, corners[3], corners[0], cv::Scalar(0, 255, 255), 2); 
 }
 
-// Process the whole video, applying table/ball segmentation and 2D view
+/**
+ * Processes the whole video, applying table/ball segmentation and 2D view.
+ * 
+ * @param videoPath The path to the video file to be processed.
+ *
+ * @throws std::invalid_argument If the video file cannot be opened.
+ * @throws std::runtime_error If exactly 4 corners cannot be found in the video.
+*/
 void VideoProcessor::processVideo(const std::string& videoPath){
     // Open the video
     cv::VideoCapture cap(videoPath);
@@ -343,11 +386,10 @@ void VideoProcessor::processVideo(const std::string& videoPath){
         // If the variable saveFrames is true, then save the first and last frame 
         if(saveFrames == true){
         // Capture the first frame
-        if (!firstFrameCaptured){
-            firstFrame = result.clone();
-            firstFrameCaptured = true;
-        }
-
+            if (!firstFrameCaptured){
+                firstFrame = result.clone();
+                firstFrameCaptured = true;
+            }
             lastFrame = result.clone(); // Capture the last frame in the loop
         }
 
