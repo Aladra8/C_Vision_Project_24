@@ -356,7 +356,7 @@ void VideoProcessor::processVideo(const std::string& videoPath){
 
     cv::Mat frame;
 
-    bool saveFrames = false; // Set to true to save the first and last frame
+    bool saveFrames = true; // Set to true to save the first and last frame
     cv::Mat firstFrame, lastFrame;
     bool firstFrameCaptured = false;
     
@@ -402,12 +402,17 @@ void VideoProcessor::processVideo(const std::string& videoPath){
         }
 
     }
-
     // Save the first and last frame inside the "frame" directory 
     if (saveFrames){
         std::string directory = "../frame";
-        cv::imwrite(directory + "/frame_first.jpg", firstFrame);
-        cv::imwrite(directory + "/frame_last.jpg", lastFrame);
+
+        // Extract folder name from videoPath
+        std::string folderName = videoPath.substr(videoPath.find_last_of("/\\", videoPath.find_last_of("/\\") - 1) + 1);
+        folderName = folderName.substr(0, folderName.find_first_of("/\\"));
+
+        // Save frames
+        cv::imwrite(directory + "/" + folderName + "_first.jpg", firstFrame);
+        cv::imwrite(directory + "/" + folderName + "_last.jpg", lastFrame);
     }
 
     // Release the video and close all windows
